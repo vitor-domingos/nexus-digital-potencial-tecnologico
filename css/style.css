@@ -1,0 +1,286 @@
+/* Nexus Digital - Identidade Visual Atualizada */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+  --primary-color: #0d9488;    /* Verde Água Principal */
+  --primary-hover: #0f766e;    /* Verde Água Escuro */
+  --secondary-color: #0ea5e9;  /* Ciano Ativo */
+  --dark-base: #0f172a;        /* Azul Marinho Profundo (Nexus) */
+  --light-bg: #f0fdfa;         /* Fundo com tom esverdeado leve */
+  --text-main: #334155;        /* Cinza Slate para leitura */
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.7;
+  color: var(--text-main);
+  background-color: var(--light-bg);
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Tipografia Nexus */
+h1, h2, h3 {
+  line-height: 1.2;
+  margin-bottom: 1.2rem;
+  color: var(--dark-base);
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 3rem;
+}
+
+/* Nova linha decorativa Nexus */
+h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 5px;
+  background-color: var(--primary-color);
+  margin: 12px auto 0;
+  border-radius: 10px;
+}
+
+p {
+  margin-bottom: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+section {
+  padding: 80px 0;
+}
+
+/* Header Nexus - Mais moderno e limpo */
+.header {
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  padding: 1.2rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  letter-spacing: -1px;
+}
+
+.header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.header nav ul li {
+  margin-left: 30px;
+}
+
+.header nav ul li a {
+  color: var(--dark-base);
+  font-weight: 600;
+}
+
+.header nav ul li a:hover {
+  color: var(--primary-color);
+}
+
+/* Hero Section Nexus - Gradiente Vibrante */
+.hero {
+  background: linear-gradient(135deg, rgba(13, 148, 136, 0.9), rgba(15, 23, 42, 0.9)),
+    url("../images/hero-background.jpg") no-repeat center center/cover;
+  color: var(--white);
+  text-align: center;
+  padding: 120px 0;
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 3.2rem;
+  color: var(--white);
+  margin-bottom: 1.5rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  color: #ccfbf1; /* Verde menta clarinho */
+  max-width: 750px;
+  margin: 0 auto 2.5rem;
+}
+
+/* Container para garantir o espaçamento */
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+/* Estilo do Botão Principal (Azul com Texto BRANCO) */
+.cta-button {
+  display: inline-block;
+  background-color: #0ea5e9; /* O azul do seu print */
+  color: #ffffff !important;  /* ISSO FAZ O TEXTO BRANCO APARECER */
+  padding: 15px 35px;
+  border-radius: 50px;
+  font-weight: 700;
+  text-decoration: none;
+  border: 2px solid #0ea5e9; /* Borda da mesma cor do fundo */
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0284c7;
+  border-color: #0284c7;
+  transform: translateY(-3px);
+}
+
+/* Estilo do Botão Secundário (Transparente com BORDA BRANCA e TEXTO BRANCO) */
+.cta-button.secondary {
+  background-color: transparent;
+  color: #ffffff !important;  /* TEXTO BRANCO FORÇADO */
+  border: 2px solid #ffffff;  /* BORDA BRANCA APARECENDO */
+}
+
+.cta-button.secondary:hover {
+background-color: #ffffff;
+color: #0ea5e9 !important; /* Inverte a cor ao passar o mouse */
+}
+
+
+/* Grid de Benefícios */
+.beneficio-item {
+  background-color: var(--white);
+  padding: 40px 25px;
+  border-radius: 16px;
+  border-bottom: 4px solid transparent;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.beneficio-item:hover {
+  transform: translateY(-8px);
+  border-color: var(--primary-color);
+}
+
+.beneficio-icon {
+  width: 70px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.beneficio-item h3 {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+}
+
+/* Depoimentos Nexus */
+.depoimentos {
+  background-color: #f8fafc;
+}
+
+.depoimento {
+  background-color: var(--white);
+  padding: 40px;
+  border-radius: 16px;
+  border-top: 5px solid var(--primary-color);
+}
+
+.depoimento blockquote::before {
+  content: "“";
+  color: var(--primary-color);
+  font-size: 4rem;
+  top: -20px;
+}
+
+/* Seção CTA Final - Cores Sóbrias */
+.cta {
+  background-color: var(--dark-base);
+  color: var(--white);
+}
+
+.cta h2 {
+  color: var(--white);
+}
+
+.cta h2::after {
+  background-color: var(--secondary-color);
+}
+
+.cta p {
+  color: #94a3b8;
+  font-size: 1.1rem;
+}
+
+.cta .cta-button {
+  background-color: var(--secondary-color);
+  box-shadow: 0 10px 15px -3px rgba(14, 165, 233, 0.3);
+}
+
+.cta .cta-button:hover {
+  background-color: #0284c7;
+}
+
+/* Footer Nexus - Profissional */
+.footer {
+  background-color: #020617;
+  color: #64748b;
+  padding: 60px 0 30px;
+}
+
+.footer p {
+  color: #94a3b8;
+  font-size: 0.95rem;
+}
+
+.footer a {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.footer a:hover {
+  color: var(--white);
+}
+
+.credits {
+  color: #475569;
+  margin-top: 20px;
+  font-size: 0.8rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .hero h1 { font-size: 2.4rem; }
+  .header .container { flex-direction: row; justify-content: space-between; }
+  .header .logo { font-size: 1.4rem; }
+  .cta-buttons { flex-direction: row; gap: 10px; }
+}
